@@ -156,7 +156,7 @@ function profilUser(contentPage){
 
     const infoUserPersonnel = document.createElement("div");
     infoUserPersonnel.className="infoUser";
-    infoUserPersonnel.textContent = "Voici vos infos personnelles:";
+    infoUserPersonnel.textContent = "Voici tes infos personnelles:";
 
     const infoUserID = document.createElement("div");
     infoUserID.className="infoUser";
@@ -176,19 +176,15 @@ function profilUser(contentPage){
 
     const infoGender = document.createElement("div");
     infoGender.className="infoUser";
-    infoGender.textContent=`Ton sexe de naissance: ${infoUser.attrs.gender}`;
+    infoGender.textContent=`Tu es: ${infoUser.attrs.gender}`;
 
     const infoAdressStreet = document.createElement("div");
     infoAdressStreet.className="infoUser";
-    infoAdressStreet.textContent=`Tu habites à : ${infoUser.attrs.addressStreet}`;
-
-    const bonneUsage = document.createElement("div");
-    bonneUsage.className="infoUser";
-    bonneUsage.textContent=`voila ${infoUser.attrs.firstName} ;)`;
+    infoAdressStreet.textContent=`Tu habites: ${infoUser.attrs.addressStreet}`;
 
     const motivation = document.createElement("div");
     motivation.className="infoUser";
-    motivation.textContent=`phrase de motivation: "${infoUser.attrs.attentes}"`;
+    motivation.textContent=`Phrase de Motivation: "${infoUser.attrs.attentes}"`;
 
     const levelUser = document.createElement("div");
     levelUser.className = "infoUser";
@@ -208,7 +204,6 @@ function profilUser(contentPage){
     contentPage.appendChild(infoGender);
     contentPage.appendChild(infoAdressStreet);
     contentPage.appendChild(motivation);
-    contentPage.appendChild(bonneUsage);
     contentPage.appendChild(ligne);
 }
 
@@ -270,7 +265,7 @@ function generateGraphLinear() {
             text.setAttribute("x", 0);
             text.setAttribute("y", y);
             text.setAttribute("fill", "white");
-            text.textContent = `Nombre d'exp totale : ${sommeOfAllValues}`; 
+            text.textContent = `Nombre d'exp total : ${sommeOfAllValues}`; 
             svg.appendChild(text);
         }else if(i===7){
             const y = 400 - i * 40;
@@ -344,7 +339,7 @@ function generateGraphBar() {
 
     const auditAllTarnsact = document.createElement("div");
     auditAllTarnsact.className="infoUser";
-    auditAllTarnsact.textContent=`Nombres d'audit passer : ${data.length}\n`;
+    auditAllTarnsact.textContent=`Nombre d'audits passés : ${data.length}\n`;
 
     xpAlltransact.appendChild(auditAllTarnsact);
     xpAlltransact.appendChild(svg);

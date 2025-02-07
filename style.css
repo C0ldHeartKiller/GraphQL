@@ -22,15 +22,15 @@ button {
     margin: 0 auto;
     padding: 10px 20px;
     background-color: #fff;
-    color: #007bff; 
-    border: 2px solid #007bff; 
+    color: #FFFF; 
+    border: 2px solid #FFFF; 
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover {
-    background-color: #007bff; 
+    background-color: #FFFF; 
     color: #fff; 
 }
 
@@ -69,12 +69,12 @@ input[type="password"] {
 input[type="text"]:focus,
 input[type="password"]:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #FFFF;
 }
 
 input[type="text"]:hover,
 input[type="password"]:hover {
-    border-color: #007bff;
+    border-color: #FFFF;
 }
 
 .graphDiv{
